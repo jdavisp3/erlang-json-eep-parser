@@ -1,11 +1,8 @@
-Nonterminals array element elements object members member arrayobj.
+Nonterminals array element elements object members member.
 
 Terminals '{' '}' '[' ']' string ',' ':' integer float true false null.
 
 Rootsymbol element.
-
-arrayobj -> array : '$1'.
-arrayobj -> object : '$1'.
 
 object -> '{' members '}' : {'$2'}.
 object -> '{' '}' : {[]}.
