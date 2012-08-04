@@ -1,1 +1,3 @@
-*.beam
+ebin
+src/json_grammar.erl
+src/json_lex2.erl
