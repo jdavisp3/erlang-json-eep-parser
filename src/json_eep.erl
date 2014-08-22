@@ -62,6 +62,8 @@ json_encode(false) ->
     <<"false">>;
 json_encode(null) ->
     <<"null">>;
+json_encode(undefined) ->
+    <<"null">>;
 json_encode(I) when is_integer(I) andalso I >= -2147483648 andalso I =< 2147483647 ->
     %% Anything outside of 32-bit integers should be encoded as a float
     integer_to_list(I);
